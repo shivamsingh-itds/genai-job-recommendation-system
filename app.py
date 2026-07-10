@@ -22,8 +22,7 @@ if uploaded_file:
 
     with st.spinner("Creating Future Roadmap..."):
         roadmap = ask_openai(f"Based on this resume, suggest a future roadmap to improve this person's career prospects (Skill to learn, certification needed, industry exposure): \n\n{resume_text}", max_tokens=400)
-    
-    # Display nicely formatted results
+ 
     st.markdown("---")
     st.header("📑 Resume Summary")
     st.markdown(f"<div style='background-color: #000000; padding: 15px; border-radius: 10px; font-size:16px; color:white;'>{summary}</div>", unsafe_allow_html=True)
